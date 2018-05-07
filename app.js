@@ -1,7 +1,7 @@
 const StreamrClient = require('streamr-client');
 
 // Ahoy Hacker, fill in this!
-const STREAM_NAME = 'Random data stream (test)';
+const STREAM_NAME = 'Random test data from Docker';
 
 const API_KEY = process.env.API_KEY
 if (API_KEY === undefined) {
