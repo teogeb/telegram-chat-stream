@@ -51,7 +51,7 @@ const pollChats = (stream: any) => {
                 stream.produce(msg);
                 previousMemberCounts.set(chatId, memberCount);
             }
-        });
+        }).catch(console.error);
         chatInd++;
         if (chatInd === CHAT_IDS.length) {
             chatInd = 0;
