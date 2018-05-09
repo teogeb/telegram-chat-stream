@@ -43,7 +43,7 @@ const pollChats = (stream: any) => {
         getMemberCount(chatId).then((memberCount: number) => {
             const previousMemberCount = previousMemberCounts.get(chatId);
             if ((previousMemberCount === undefined) || (previousMemberCount !== memberCount)) {
-                console.log('New value for ' + chatId + ': ' + memberCount);
+                console.log(chatId + ': ' + memberCount);
                 const msg = {
                     'chat': chatId,
                     'memberCount': memberCount
